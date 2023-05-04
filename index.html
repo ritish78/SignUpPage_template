@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <!--        Favicon credit: https://icons8.com/illustrations/illustration/juicy-scooter      -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class='mainContent'>
+        <div class="imageContainer">
+            <!--      SVG Credit: https://undraw.co/illustrations       -->
+            <img src="undraw_traveling.svg">
+            <div class="logo">
+                <img class="appLogo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+                <h1 class="appText">Odin</h1>
+            </div>
+        </div>
+        <div class="rightContainer">
+            <div class="topInfoContainer"><p>This is not a real online service! You know you need something like this
+                in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <span class="italicSpan">now</span> to get started.</p>
+                <div class='youKnow'>
+                    <p>You <span class="italicSpan">know</span> you want to.</p>
+                </div>
+            </div>
+            <div class="formContainer">
+                <div class="formInputContainer">
+                    <p class="formInfo">Let's do this!</p>
+                    <form action="#">
+                        <div class="formInput">
+                            <div class="formValues">
+                                <label for="firstName">FIRST NAME</label>
+                                <input id="firstName" type="text" minlength="4" maxlength="32" placeholder="John">
+                            </div>
+                            <div class="formValues">
+                                <label for="lastName">LAST NAME</label>
+                                <input id="lastName" type="text" minlength="3" maxlength="32" placeholder="Doe">
+                            </div>
+                            <div class="formValues">
+                                <label for="emailAddress">EMAIL</label>
+                                <input id="emailAddress" type="email" placeholder="example@email.com">
+                            </div>
+                            <div class="formValues">
+                                <label for="phoneNumber">PHONE NUMBER</label>
+                                <input id="phoneNumber" type="number">
+                            </div>
+                            <div class="formValues">
+                                <label for="password">PASSWORD</label>
+                                <input id="password" type="password">
+                            </div>
+                            <div class="formValues">
+                                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                                <input id="confirmPassword" type="password">
+                                <span id="confirmPasswordSpan" class="error">Password Mismatch!</span>
+                            </div>
+                        </div>
+                        <div class="formSubmit">
+                            <button id="submitBtn" type="submit">Create Account</button>
+                        </div>
+                    </form>
+                    <div class="alreadyAccount">Already have an account? <a href="#">Log in</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

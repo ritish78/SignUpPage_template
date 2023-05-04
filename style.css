@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poiret+One&display=swap');
+
+:root {
+    --logo-text-color: white;
+    --right-container-background-color: beige;
+    --form-container-background-color: lemonchiffon;
+    --primary-color: #CA63FF;
+    --secondary-color: #aa00ff;
+    --error-color: #ec6969;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row wrap;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #34b5ff, #34ece3);
+}
+
+.imageContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 10vh;
+    gap: 1vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.logo img, h1 {
+    color: var(--logo-text-color);
+    height: 70px;
+}
+
+.logo h1 {
+    margin-top: 25px;
+    font-family: 'Bruno Ace SC';
+}
+
+.rightContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 auto auto;
+    padding: 0 40px;
+    height: 100vh;
+    background: var(--right-container-background-color);
+}
+
+
+.topInfoContainer {
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+.italicSpan {
+    font-style: italic;
+}
+
+.youKnow {
+    margin: 20px 0;
+}
+
+.formInfo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    background: var(--form-container-background-color);
+    font-family: inherit;
+}
+
+.formInputContainer {
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--primary-color);
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+}
+
+.formInput {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.formValues {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 70%;
+    height: 2em;
+    border-radius: 4px;
+    outline:none;
+    border: 2px solid var(--secondary-color);
+    padding: 0 5px;
+    margin: 5px 0;
+}
+
+
+input:focus {
+    outline: none;
+    border: 2px solid #000000;
+}
+
+input:invalid {
+    outline: none;
+    border: 3px solid var(--error-color);
+}
+
+input:valid {
+    outline: none;
+    border: 2px solid var(--secondary-color);
+}
+
+
+.error {
+    color: var(--error-color);
+    font-size: 12px;
+}
+
+
+button {
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 3px 3px #000000;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 2px 2px #000000;
+}
+
+.alreadyAccount {
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: overline underline;    /* Added both overline and underline*/
+}
